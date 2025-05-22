@@ -232,8 +232,8 @@ export default function CartaNutricional() {
               <div className="mb-4">
                 <h3 className="h5 mb-2">Platos principales</h3>
                 {menuData[tipoMenu]
-                  .filter((plato: any) => plato.tipo === "normal")
-                  .map((plato: any) => (
+                  .filter((plato: Plato) => plato.tipo === "normal")
+                  .map((plato: Plato) => (
                     <div
                       key={plato.id}
                       className={`p-2 border rounded mb-2 ${
@@ -265,8 +265,8 @@ export default function CartaNutricional() {
               <div>
                 <h3 className="h5 mb-2">Opción de dieta</h3>
                 {menuData[tipoMenu]
-                  .filter((plato: any) => plato.tipo === "dieta")
-                  .map((plato: any) => (
+                  .filter((plato: Plato) => plato.tipo === "dieta")
+                  .map((plato: Plato) => (
                     <div
                       key={plato.id}
                       className={`p-2 border rounded mb-2 ${
@@ -355,8 +355,8 @@ export default function CartaNutricional() {
       <div className="row mt-4">
         <div className="col text-center">
           <p className="fst-italic text-muted">
-            "La buena comida es como la música que se puede saborear, el color
-            que se puede oler."
+            &quot;La buena comida es como la música que se puede saborear, el
+            color que se puede oler.&quot;
           </p>
         </div>
       </div>
